@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>하이미디어 여행사</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo_wrap">
+            <div class="logo">
+                <ul>
+                    <li class="main_logo">
+                        <a href="#">
+                            <img src="./images/logo.png" alt="로고">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="search">
+                            <div class="search_text">
+                                SEARCH</div>
+                            <a href="#">
+                                <div class="search_icon">
+                                    <img src="./images/search.jpg" alt="검색">
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class=header_sns>
+                        <a href="#">
+                            <div class="number">+82&nbsp;02&nbsp;1234&nbsp;5678</div>
+                        </a>
+                        <div class="sns_img">
+                            <img src="./images/snsicon01.jpg" alt="sns">
+                            <img src="./images/snsicon02.jpg" alt="sns">
+                            <img src="./images/snsicon03.jpg" alt="sns">
+                            <img src="./images/snsicon04.jpg" alt="sns">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_wrap">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">여행도시</a></li>
+                    <li><a href="#">호텔예약</a></li>
+                    <li><a href="#">렌트카</a></li>
+                    <li><a href="#">여행TIP</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="article">
+        <div class="menu1">
+            <ul>
+                <li>
+                    <table cellspacing="0">
+                        <tr>
+                            <td style="background: #fff; "><i class="fas fa-plane"></i> 공항예약</td>
+                            <td rowspan="4" style="width: 330px; background: white">
+                                <fieldset style="border:0; text-align: left; margin-left: 15px;">
+                                    <label for="search">가고 싶은 나라를 선택하세요.
+                                        <br>
+                                    </label>
+                                    <select name="나라" id="search" style="width: 300px; height: 30px; margin-top: 10px;">
+                                        <option value="usa">미국</option>
+                                        <option value="uk">영국</option>
+                                        <option value="france">프랑스</option>
+                                        <option value="china">중국</option>
+                                        <option value="japan">일본</option>
+                                    </select>
+                                    <ul class="travel_date">
+                                        <li>
+                                            <label for="start">
+                                                출발일
+                                            </label>
+                                            <br>
+                                            <input type="date" id="start" style="width:141px; height:25px; margin-top:10px;">
+                                        </li>
+                                        <li>
+                                            <label for="end">도착일</label>
+                                            <input type="date" id="end" style="width:141px; height:25px; margin-top:10px;">
+                                        </li>
+                                    </ul>
+                                    <ul class="travel_seat">
+                                        <li>
+                                            <label for="seat">
+                                                좌석등급
+                                            </label>
+                                            <br>
+                                            <select name="좌석등급" id="seat" style="margin-top: 10px; width: 145px; height: 29px;">
+                                                <option value="economy">이코노미</option>
+                                                <option value="business">비즈니스</option>
+                                                <option value="first">퍼스트</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="adult">
+                                                성인
+                                            </label>
+                                            <br>
+                                            <input type="number" min="1" max="10" step="1" value="1" id="adult" style="margin-top: 10px; width: 65px; height: 25px;">
+                                        </li>
+                                        <li>
+                                            <label for="child">
+                                                아이
+                                            </label>
+                                            <br>
+                                            <input type="number" id="child" min="1" max="10" step="1" value="1" style="margin-top: 10px; width: 65px; height: 25px;">
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                                <input type="submit" value="검색하기" style="margin-top:17px; width: 300px; height: 40px; background: #eb4e21; border-radius: 10px; border-style: none; color:white; font-size:16px; font-weight: bold; line-height: 40px; cursor: pointer;" onfocus="blur()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #006599; color: white;bborder-bottom:1px solid #12a0cf;"><i class="fas fa-hotel"></i> 호텔예약</td>
+                        </tr>
+                        <tr>
+                            <td style="background: #0099cb; color: white;border-bottom:1px solid #12a0cf;"><i class="fas fa-car-side"></i> 렌트카</td>
+                        </tr>
+                        <tr>
+                            <td style="background: #0099cb; color: white;border-bottom:1px solid #12a0cf;"><i class="fas fa-map-marked-alt"></i> 휴양지</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="travel_go">
+                    <h1>TRAVEL&nbsp;GO</h1>
+                    <p>지금,&nbsp;여행이&nbsp;떠나고&nbsp;싶다면?
+                        <br>하이미디어와&nbsp;여행을&nbsp;떠나자!
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu2">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="menu2_box">
+                            <h4 style="display: inline-block; padding-left: 20px; color: white;">프랑스</h4>
+                            <h4 style="display: inline-block; position: absolute; right: 20px; color: #549553;">\1,900,000~</h4>
+                            <img src="./images/btn.png" alt="버튼" style="position: absolute; right: 10px; top:12px;">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu2_box">
+                            <h4 style="display: inline-block; padding-left: 20px; color: white;">일본</h4>
+                            <h4 style="display: inline-block; position: absolute; right: 20px; color: #549553;">\890,000~</h4>
+                            <img src="./images/btn.png" alt="버튼" style="position: absolute; right: 10px; top:12px;">
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="menu3">
+            <ul>
+                <li style="background: url(./images/hilton.jpg) no-repeat; background-size: cover; cursor: pointer;">
+                    <a href="#">
+                        <div class="menu3_box" style="background: #529351;">
+                            <h4 style="color:white;">HILLTON HOTEL(PARIS)</h4>
+                            <img src="./images/star.png" alt="별점">
+                        </div>
+                    </a>
+                </li>
+                <li style="background: url(./images/disney.jpg) no-repeat; background-size: cover; cursor: pointer;">
+                    <a href="#">
+                        <div class="menu3_box" style="background: #152630;">
+                            <h4 style="color:white;">관광명소(디즈니랜드)</h4>
+                            <img src="./images/star.png" alt="별점">
+                        </div>
+                    </a>
+                </li>
+                <li style="background: url(./images/weather.jpg) no-repeat center; background-size: cover; cursor: pointer;">
+                    <a href="#">
+                        <h1 style="color: white; padding-left: 32%; padding-top: 20px;
+                        font-weight: 800">
+                        TOKYO
+                        </h1>
+                        <div class="menu3_box" style="background: rgba(0,0,0,0.7);">
+                            <h3 style="display:inline-block; color: white; padding-left: 20px;">20°C</h3>
+                            <h4 style="color:white; display: inline-block; padding-left: 0;">구름조금</h4>
+                            <p style="font-size: 14px; color:#CBCBCB; padding-left: 20px;">습도 60% 바람 남남동 2m/s</p>
+                        </div>
+                    </a>
+                </li>
+                <li style="background: url(./images/review.jpg) no-repeat #f7f5f6;background-position: 5px 20px; cursor: pointer;">
+                    <a href="#">
+                        <div class="review" style="padding-left: 20px;">
+                            <br><span style="font-size:14px; font-weight: 800;">
+                            "해외여행은 처음이었는데,<br>하이미디어 여행 덕분에 무사히<br>
+                            다녀올 수 있었어요."
+                            </span>
+                            <br>
+                            <br>
+                            <span style="font-size: 12px; font-weight: 800; color: #44619d;">프랑스 파리 자유여행</span>
+                            <br>
+                            <img src="./images/star2.png" alt="별점">
+                        </div>
+                        <div class="menu3_box" style="background: #44619d;">
+                            <img src="./images/fb.png" alt="페이스북아이콘">
+                            <h4 style="display: inline-block; padding-left: 0; color:white;">여행후기</h4>
+                            <p style="color:white; padding-left: 20px; font-size:14px; color:#cbcbcb;">(임정희님)
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu4">
+            <ul>
+                <li style="background: url(./images/inform01.jpg) no-repeat; background-size: cover;">
+                    <a href="#">
+                        <div class="menu4_box" style="background: rgba(121,184,218,0.6);">
+                            <h3><i class="fas fa-globe-asia"></i> 여행정보</h3>
+                            <p>다양한 나라의 명소와 맛집 등
+                                <br>상세한 정보를 볼 수 있습니다.</p>
+                            <img src="./images/plusbtn.png" alt="더보기">
+                        </div>
+                    </a>
+                </li>
+                <li style="background: url(./images/inform02.jpg) no-repeat center; background-size: cover;">
+                    <a href="#">
+                        <div class="menu4_box" style="background: rgba(0,0,0,0.6);">
+                            <img src="./images/plusbtn.png" alt="더보기" style="padding-top: 80px;">
+                            <h3 style="margin-top: 15px;"><i class="fas fa-utensils"></i> 맛집정보</h3>
+                            <p>다양한 나라의 명소와 맛집 등
+                                <br>상세한 정보를 볼 수 있습니다.</p>
+                        </div>
+                    </a>
+                </li>
+                <li style="background: url(./images/inform03.jpg) no-repeat center; background-size: cover;">
+                    <a href="#">
+                        <div class="menu4_box" style="background: rgba(0,0,0,0.6);">
+                            <img src="./images/plusbtn.png" alt="더보기" style="padding-top: 80px;">
+                            <h3 style="margin-top: 15px;"><i class="fas fa-home"></i> 숙박정보</h3>
+                            <p>다양한 나라의 명소와 맛집 등
+                                <br>상세한 정보를 볼 수 있습니다.</p>
+                        </div>
+                    </a>
+                </li>
+                <li style="background: url(./images/inform04.jpg) no-repeat center; background-size: cover;">
+                    <a href="#">
+                        <div class="menu4_box" style="background: rgba(49,133,86,0.6);">
+                            <h3><i class="fas fa-thumbs-up"></i> 여행자후기</h3>
+                            <p>다양한 나라의 명소와 맛집 등
+                                <br>상세한 정보를 볼 수 있습니다.</p>
+                            <img src="./images/plusbtn.png" alt="더보기">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer_menu">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><b>개인정보취급방침</b></a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">광고 및 제휴문의</a></li>
+            </ul>
+            <p>123-456 서울특별시 구로구 구로동 (주)하이미디어 &nbsp;&nbsp;사업자등록번호 : 123-45-678910 &nbsp;&nbsp;대표이사 : 홍길동&nbsp;&nbsp; 대표번호 : 02-1234-5678</p>
+            <p>COPYRIGHT(c)2014 HIMEDIA TOUR.ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
