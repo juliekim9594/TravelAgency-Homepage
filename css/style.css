@@ -148,16 +148,67 @@ td {
     font-size: 18px;
 }
 
+fieldset {
+    font-size: 14px;
+}
+
+.travel_date {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.travel_date>li {
+    float: left;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.travel_date>li:first-child {
+    margin-right: 5px;
+}
+
+.travel_seat {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.travel_seat>li {
+    float: left;
+}
+
+.travel_seat>li:first-child {
+    margin-right: 10px;
+}
+
+.travel_seat>li:nth-child(2) {
+    width: 65px;
+    margin-right: 11px;
+}
+
+.travel_seat>li:last-child {
+    width: 65px;
+}
+
 .travel_go {
     padding-left: 40px;
     font-weight: 800;
     color: #152630;
+    position: relative;
 }
 
 .travel_go>h1 {
     font-size: 4.5em;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     letter-spacing: -2px;
+}
+
+.travel_go>h1:after {
+    content: "";
+    width: 100px;
+    border: 3px solid #152630;
+    position: absolute;
+    top: 85px;
+    right: 0px;
 }
 
 .travel_go>p {
@@ -332,48 +383,11 @@ td {
     font-size: 14px;
 }
 
+.footer_menu>ul>li>a:hover {
+    color: #959595;
+}
+
 .footer_menu>p {
     font-size: 12px;
     color: #6C6C6C;
-}
-
-fieldset {
-    font-size: 14px;
-}
-
-.travel_date {
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.travel_date>li {
-    float: left;
-    width: 150px;
-    box-sizing: border-box;
-}
-
-.travel_date>li:first-child {
-    margin-right: 5px;
-}
-
-.travel_seat {
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.travel_seat>li {
-    float: left;
-}
-
-.travel_seat>li:first-child {
-    margin-right: 10px;
-}
-
-.travel_seat>li:nth-child(2) {
-    width: 65px;
-    margin-right: 11px;
-}
-
-.travel_seat>li:last-child {
-    width: 65px;
 }
