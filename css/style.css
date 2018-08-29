@@ -189,6 +189,13 @@ fieldset {
     width: 65px;
 }
 
+.search_box {
+    border: none;
+    position: absolute;
+    padding: 7px 0px;
+    width: 160px;
+}
+
 .travel_go {
     padding-left: 40px;
     font-weight: 800;
@@ -384,7 +391,7 @@ fieldset {
 }
 
 .footer_menu>ul>li>a:hover {
-    color: #959595;
+    color: #0763a2;
 }
 
 .footer_menu>p {
