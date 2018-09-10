@@ -4,6 +4,11 @@ a {
     display: block;
 }
 
+body {
+    background: #efefef;
+}
+
+
 
 /*header시작*/
 
@@ -11,6 +16,7 @@ a {
     width: 100%;
     margin: 0 auto;
 }
+
 
 
 /*로고*/
@@ -41,6 +47,7 @@ a {
     line-height: 120px;
     padding-right: 140px;
 }
+
 
 
 /*서치바*/
@@ -76,6 +83,7 @@ a {
 }
 
 
+
 /*전화번호,SNS*/
 
 .header_sns {
@@ -100,6 +108,7 @@ a {
     margin-top: 5px;
     right: 0
 }
+
 
 
 /*메뉴*/
@@ -151,14 +160,17 @@ a {
     left: 0;
 }
 
-.sub_menu0{width: 980px; margin: 0 auto;
-position: relative;}
+.sub_menu0 {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
 
 .sub_menu {
     overflow: hidden;
     margin-top: -14px;
     position: absolute;
-    right:0;
+    right: 0;
 }
 
 .sub_menu>li {
@@ -181,13 +193,13 @@ position: relative;}
 .sub_menu>li:first-child a {
     color: white;
 }
+
+
 /*header끝*/
 
 #article {
     width: 100%;
     margin: 0 auto;
-    height: 1160px;
-    background: #efefef;
 }
 
 .article_bg1 {
@@ -195,20 +207,19 @@ position: relative;}
     height: 295px;
     background: url(../images/subbg.jpg);
     background-size: cover;
-    border-bottom: 5px solid #0f73a7;
 }
 
 .article_bg1_box {
     width: 980px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 65px;
+    padding-top: 70px;
     color: white;
     position: relative;
 }
 
 .article_bg1_box>h1 {
-    font-size: 5em;
+    font-size: 4.5em;
 }
 
 .article_bg1_box>h1:after {
@@ -221,18 +232,119 @@ position: relative;}
 }
 
 .article_bg1_box>span {
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.article_box{width: 980px; margin:0 auto;
-position: relative;}
+.article_box {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
 
 .article_box2 {
     width: 980px;
-    height: 200px;
     background: #fff;
     margin: 0 auto;
     box-shadow: 0px 0px 10px #ddd;
     top: -50px;
     position: absolute;
+    border-top: 5px solid #0e73a7;
+    border-bottom: 5px solid #0e73a7;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.boxes01 {
+    width: 490px;
+    float: left;
+    padding: 60px 0px;
+    padding-left: 50px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.boxes01>h1 {
+    font-size: 2em;
+    letter-spacing: -1.5px
+}
+
+.boxes01>table {
+    width: 440px;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #006599;
+    font-size: 14px;
+    color: #747474
+}
+
+.boxes02 {
+    width: 490px;
+    float: right;
+    padding: 60px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.boxes02>span {
+    position: absolute;
+    right: 60px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.boxes03 {
+    clear: both;
+    content: "";
+    display: block;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.boxes03>ul {
+    overflow: hidden;
+}
+
+.boxes03>ul>li {
+    float: left;
+    width: 200px;
+    height: 215px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
+.boxes03>ul>li:first-child {
+    margin-left: 50px;
+    background-image: url(../images/france01.jpg);
+}
+
+.boxes03>ul>li:first-child h1 {
+    margin: 15px 20px;
+    color: #fff;
+}
+
+.boxes03>ul>li:nth-child(2) {
+    background-image: url(../images/uk.jpg);
+}
+
+.boxes03>ul>li:nth-child(2) h1 {
+    margin: 15px 20px;
+    color: #fff;
+}
+
+.boxes03>ul>li:nth-child(3) {
+    background-image: url(../images/swiss.jpg);
+    background-position: center;
+}
+
+.boxes03>ul>li:nth-child(3) h1 {
+    margin: 140px 20px;
+    color: #fff;
+}
+
+.boxes03>ul>li:last-child {
+    background: url(../images/belgium.jpg) center;
+}
+
+.boxes03>ul>li:last-child h1 {
+    margin: 15px 75px;
+    color: #fff;
 }
